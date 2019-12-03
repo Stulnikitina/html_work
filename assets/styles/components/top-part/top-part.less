@@ -1,11 +1,9 @@
-// Common
-@import "./../common/normalize";
-@import "./../common/fonts";
-@import "./../common/colors";
-
 .top-part{
 
-  &__header {
+  display: flex;
+  flex-flow: column nowrap;
+
+  &__header{
     font: 81.25% Arial, Helvetica, sans-serif;
     width: 82%;
     height: 33px;
@@ -28,21 +26,12 @@
     justify-content: space-between;
   }
 
-  &__news{ -> news
+  &__news{
     width: 65%;
     padding-left: 120px;
     padding-top: 5px;
     display: block;
     flex-direction: column;
-  }
-
-  &__header-news{
-    padding-left: 60px;
-    margin-top: 5px;
-  }
-
-  &__news-list{
-    list-style-type: none;
   }
 
   &__exchange-rates{
@@ -57,7 +46,7 @@
     margin-bottom: 10px;
   }
 
-  &__ad {
+  &__ad{
     width: 35%;
     display: flex;
     flex-flow: column nowrap;
@@ -65,50 +54,7 @@
     padding-left: 30px;
   }
 
-  &__ad-img{
-    width: 120px;
-    height: 90px;
-    margin-bottom: 20px;
-    margin-top: 5px;
-
-  }
-
-  &__ad-text{
-    width: 30px;
-    font-size: 16px;
-    font-family: 'YS Text','Helvetica Neue',Arial,sans-serif;
-    font-weight: bolder;
-    color:#0054b9;
-    padding-right: 6px;
-  }
-
 }
-
-.news-list {
-  &__item {
-    vertical-align: bottom;
-    line-height: 22px;
-  }
-
-  &__item-img {
-    vertical-align: middle;
-    width: 16px;
-    height: 16px;
-  }
-}
-
-.header-group {
-  &__icon {
-    vertical-align: middle;
-    width: 16px;
-    height: 16px;
-  }
-
-  &__text {
-    padding-right: 13px;
-  }
-}
-
 
 
 ._grey{
@@ -139,7 +85,7 @@
 
 }
 
-.link, .link_header{
+.header-group__link{
   color: black;
   text-decoration: none;
 }

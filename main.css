@@ -304,6 +304,13 @@ template {
 [hidden] {
   display: none;
 }
+.top-part {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-flow: column nowrap;
+}
 .top-part__header {
   font: 81.25% Arial, Helvetica, sans-serif;
   width: 82%;
@@ -343,13 +350,6 @@ template {
   -webkit-box-direction: normal;
   flex-direction: column;
 }
-.top-part__header-news {
-  padding-left: 60px;
-  margin-top: 5px;
-}
-.top-part__news-list {
-  list-style-type: none;
-}
 .top-part__exchange-rates {
   display: -webkit-box;
   display: flex;
@@ -375,6 +375,59 @@ template {
   padding: 10px;
   padding-left: 30px;
 }
+._grey {
+  color: silver;
+}
+._header-news,
+.colum-item__link {
+  font-size: 16px;
+  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: bolder;
+  color: #0054b9;
+  padding-right: 6px;
+}
+._rates-name {
+  padding-right: 5px;
+  font-weight: bolder;
+}
+._rates-value {
+  padding-right: 4px;
+}
+._rates-percent {
+  padding-right: 10px;
+}
+.header-group__link {
+  color: black;
+  text-decoration: none;
+}
+.header-group__icon {
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+}
+.header-group__text {
+  padding-right: 13px;
+}
+.header-group__link {
+  color: black;
+  text-decoration: none;
+}
+.news-list {
+  list-style-type: none;
+}
+.news-list__item {
+  vertical-align: bottom;
+  line-height: 22px;
+}
+.news-list__item-img {
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+}
+.top-part__news-sheader {
+  padding-left: 60px;
+  margin-top: 5px;
+}
 .top-part__ad-img {
   width: 120px;
   height: 90px;
@@ -389,236 +442,10 @@ template {
   color: #0054b9;
   padding-right: 6px;
 }
-.news-list__item {
-  vertical-align: bottom;
-  line-height: 22px;
-}
-.news-list__item-img {
-  vertical-align: middle;
-  width: 16px;
-  height: 16px;
-}
-.header-group__icon {
-  vertical-align: middle;
-  width: 16px;
-  height: 16px;
-}
-.header-group__text {
-  padding-right: 13px;
-}
-._grey {
-  color: silver;
-}
-._header-news,
-.colum-item__link {
-  font-size: 16px;
-  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
-  font-weight: bolder;
-  color: #0054b9;
-  padding-right: 6px;
-}
-._rates-name {
-  padding-right: 5px;
-  font-weight: bolder;
-}
-._rates-value {
-  padding-right: 4px;
-}
-._rates-percent {
-  padding-right: 10px;
-}
-.link,
-.link_header {
-  color: black;
-  text-decoration: none;
-}
-.search {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  flex-flow: row nowrap;
-  -webkit-box-align: center;
-  align-items: center;
-  padding-left: 38px;
-  padding-bottom: 15px;
-  width: 81%;
-}
-.search__main-search {
-  width: 816px;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  flex-flow: row nowrap;
-}
-.search__logo {
-  width: 130px;
-  height: 80px;
-  padding-right: 5px;
-}
-.search__input {
-  width: 730px;
-  height: 30px;
-}
-.search__tabs {
-  list-style-type: none;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  width: 650px;
-  height: 30px;
-  padding: 0px;
-  font-size: 16px;
-  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
-  color: #0054b9;
-}
-.search__tab-text {
-  vertical-align: middle;
-  padding-right: 4px;
-}
-.search__input {
-  border: 2px solid #fedb5a;
-}
-.search__button {
-  background-color: #fedb5a;
-  border: 2px solid #fedb5a;
-  width: 76px;
-  height: 36px;
-  font-size: 15px;
-  padding-left: 0px;
-  position: relative;
-}
-.search__bottom {
-  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  width: 650px;
-  height: 30px;
-}
-.search__bottom-text {
-  font-size: 15px;
-  width: 170px;
-  padding-top: 5px;
-  white-space: nowrap;
-  vertical-align: middle;
-}
-._grey {
-  color: silver;
-}
-._header-news,
-.colum-item__link {
-  font-size: 16px;
-  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
-  font-weight: bolder;
-  color: #0054b9;
-  padding-right: 6px;
-}
-._rates-name {
-  padding-right: 5px;
-  font-weight: bolder;
-}
-._rates-value {
-  padding-right: 4px;
-}
-._rates-percent {
-  padding-right: 10px;
-}
-.link,
-.link_header {
-  color: black;
-  text-decoration: none;
-}
-.colums-info {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  flex-flow: row nowrap;
-  -webkit-box-pack: center;
-  justify-content: center;
-  width: 84%;
-  height: 200px;
-  padding-left: 50px;
-  margin-top: 20px;
-}
-.colums-info__colum {
-  width: 270px;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  flex-flow: column nowrap;
-}
-.colums-info__colum-item {
-  height: 200px;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  flex-flow: column nowrap;
-  padding-left: 8px;
-  padding-top: 6px;
-}
-.colums-info__img {
-  width: 20px;
-  height: 20px;
-  margin-top: 5px;
-}
-.colum-item__list {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  flex-flow: column nowrap;
-  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
-  color: black;
-  font-size: 14px;
-  margin-top: 5px;
-}
-.colum-item__text {
-  line-height: 18px;
-}
-.colum-item__list-maps {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  flex-flow: row wrap;
-  margin-top: 6px;
-}
-.colum-item__list-maps-item {
-  line-height: 25px;
-  padding-right: 8px;
-  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 15px;
-}
-._header-news,
-.colum-item__link {
-  font-size: 16px;
-  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
-  font-weight: bolder;
-  color: #0054b9;
-  padding: 3px;
-  padding-right: 6px;
-}
-.link,
-.link_header {
-  color: black;
-  text-decoration: none;
-}
-.ad-img {
-  width: 720px;
-  height: 85px;
-  margin-left: 15%;
-  margin-top: 5px;
+/*@import "components/search";
+@import "components/colums-info";
+@import "components/ad";*/
+* {
+  padding: 0;
+  margin: 0;
 }
