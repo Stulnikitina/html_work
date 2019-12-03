@@ -1,0 +1,117 @@
+// Common
+@import "./../common/normalize";
+@import "./../common/fonts";
+@import "./../common/colors";
+
+
+.search{
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding-left: 38px;
+  padding-bottom: 15px;
+  width: 81%;
+
+  &__main-search{
+    width: 816px;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  &__logo{
+    width: 130px;
+    height: 80px;
+    padding-right: 5px;
+
+  }
+
+  &__input{
+    width: 730px;
+    height: 30px;
+  }
+
+  &__tabs{
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 650px;
+    height: 30px;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'YS Text','Helvetica Neue',Arial,sans-serif;
+    color:#0054b9;
+  }
+
+  &__tab-text{
+    vertical-align: middle;
+    padding-right: 4px;
+  }
+
+  &__input{
+    border: 2px solid #fedb5a;
+  }
+
+  &__button  { // -> .button
+    background-color: #fedb5a;
+    border: 2px solid #fedb5a;
+    width: 76px;
+    height: 36px;
+    font-size: 15px;
+    padding-left: 0px;
+    position: relative;
+  }
+
+  &__bottom{
+    font-family: 'YS Text','Helvetica Neue',Arial,sans-serif;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 650px;
+    height: 30px;
+  }
+
+
+  &__bottom-text {
+    font-size: 15px;
+    width: 170px;
+    padding-top: 5px;
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+
+}
+
+._grey{
+  color: silver;
+}
+
+._header-news, .colum-item__link{
+  font-size: 16px;
+  font-family: 'YS Text','Helvetica Neue',Arial,sans-serif;
+  font-weight: bolder;
+  color:#0054b9;
+  padding-right: 6px;
+}
+
+._rates-name{
+  padding-right: 5px;
+  font-weight:bolder;
+
+}
+
+._rates-value{
+  padding-right: 4px;
+
+}
+
+._rates-percent{
+  padding-right: 10px;
+
+}
+
+.link, .link_header{
+  color: black;
+  text-decoration: none;
+}
