@@ -1,0 +1,36 @@
+.header {
+
+  font: 81.25% Arial, Helvetica, sans-serif;
+  width: 82%;
+  height: 33px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 27px;
+  padding-right: 5px;
+  padding-top: 7px;
+
+  &__group {
+
+    &-icon {
+      vertical-align: middle;
+      width: 16px;
+      height: 16px;
+    }
+
+    &-text {
+      padding-right: 13px;
+
+      &._grey {
+        color: @silver;
+      }
+    }
+
+    &-link {
+      color: black;
+      text-decoration: none;
+    }
+
+  }
+}

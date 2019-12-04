@@ -304,14 +304,7 @@ template {
 [hidden] {
   display: none;
 }
-.top-part {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  flex-flow: column nowrap;
-}
-.top-part__header {
+.header {
   font: 81.25% Arial, Helvetica, sans-serif;
   width: 82%;
   height: 33px;
@@ -328,7 +321,31 @@ template {
   padding-right: 5px;
   padding-top: 7px;
 }
-.top-part__main {
+.header__group-icon {
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+}
+.header__group-text {
+  padding-right: 13px;
+}
+.header__group-text._grey {
+  color: silver;
+}
+.header__group-link {
+  color: black;
+  text-decoration: none;
+}
+.news {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-flow: column nowrap;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+.news__container {
   font: 81.25% Arial, Helvetica, sans-serif;
   width: 84%;
   height: 190px;
@@ -341,7 +358,7 @@ template {
   -webkit-box-pack: justify;
   justify-content: space-between;
 }
-.top-part__news {
+.news__container-news {
   width: 65%;
   padding-left: 120px;
   padding-top: 5px;
@@ -350,18 +367,27 @@ template {
   -webkit-box-direction: normal;
   flex-direction: column;
 }
-.top-part__news-header {
+.news__container-ad {
+  width: 35%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-flow: column nowrap;
+  padding: 10px;
+  padding-left: 30px;
+}
+.news__header {
   padding-left: 60px;
   margin-top: 5px;
 }
-.top-part__news-header_header-news {
-  font-size: 16px;
-  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
-  font-weight: bolder;
-  color: #0054b9;
-  padding-right: 6px;
+.news__header-link {
+  text-decoration: none;
 }
-.top-part__exchange-rates {
+.news__news-list {
+  padding-left: 60px;
+}
+.news__exchange-rates {
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: horizontal;
@@ -376,63 +402,47 @@ template {
   vertical-align: middle;
   margin-bottom: 10px;
 }
-.top-part__ad {
-  width: 35%;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  flex-flow: column nowrap;
-  padding: 10px;
-  padding-left: 30px;
-}
-._grey {
-  color: silver;
-}
-._rates-name {
+.news__exchange-rates-name {
   padding-right: 5px;
   font-weight: bolder;
 }
-._rates-value {
+.news__exchange-rates-value {
   padding-right: 4px;
 }
-._rates-percent {
+.news__exchange-rates-percent {
   padding-right: 10px;
 }
-.header-group__link {
-  color: black;
-  text-decoration: none;
+.news__exchange-rates-percent._grey {
+  color: silver;
 }
-.header-group__icon {
-  vertical-align: middle;
-  width: 16px;
-  height: 16px;
-}
-.header-group__text {
-  padding-right: 13px;
-}
-.header-group__link {
-  color: black;
-  text-decoration: none;
+.header-link__text {
+  font-size: 16px;
+  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: bolder;
+  color: #0054b9;
+  padding-right: 6px;
 }
 .news-list {
   list-style-type: none;
 }
 .news-list__item {
-  line-height: 22px;
+  line-height: 25px;
 }
 .news-list__item-img {
   vertical-align: middle;
   width: 16px;
   height: 16px;
 }
-.top-part__ad-img {
+.ad-block__link {
+  text-decoration: none;
+}
+.ad-block__link-img {
   width: 120px;
   height: 90px;
   margin-bottom: 20px;
   margin-top: 5px;
 }
-.top-part__ad-text {
+.ad-block__link-text {
   width: 30px;
   font-size: 16px;
   font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
@@ -551,12 +561,6 @@ template {
   padding-left: 8px;
   padding-top: 6px;
 }
-/*.link {
-  &-header {
-    color: black;
-    text-decoration: none;
-  }
-}*/
 .colum-widget__list {
   display: -webkit-box;
   display: flex;

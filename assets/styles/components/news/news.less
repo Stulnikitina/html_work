@@ -1,0 +1,52 @@
+.news {
+
+  &__header {
+    padding-left: 60px;
+    margin-top: 5px;
+
+    &-link {
+      text-decoration: none;
+    }
+
+  }
+
+  &__news-list {
+    padding-left: 60px;
+  }
+
+  &__exchange-rates {
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    padding-left: 60px;
+    font-size: 13px;
+    font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+    height: 15px;
+    vertical-align: middle;
+    margin-bottom: 10px;
+
+    &-name {
+      padding-right: 5px;
+      font-weight: bolder;
+    }
+
+    &-value {
+      padding-right: 4px;
+    }
+
+    &-percent {
+      padding-right: 10px;
+
+      &._grey {
+        color: @silver;
+      }
+    }
+
+  }
+
+}
+
+
+
+
