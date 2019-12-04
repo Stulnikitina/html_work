@@ -350,6 +350,10 @@ template {
   -webkit-box-direction: normal;
   flex-direction: column;
 }
+.top-part__news-header {
+  padding-left: 60px;
+  margin-top: 5px;
+}
 .top-part__exchange-rates {
   display: -webkit-box;
   display: flex;
@@ -416,17 +420,12 @@ template {
   list-style-type: none;
 }
 .news-list__item {
-  vertical-align: bottom;
   line-height: 22px;
 }
 .news-list__item-img {
   vertical-align: middle;
   width: 16px;
   height: 16px;
-}
-.top-part__news-sheader {
-  padding-left: 60px;
-  margin-top: 5px;
 }
 .top-part__ad-img {
   width: 120px;
@@ -442,9 +441,170 @@ template {
   color: #0054b9;
   padding-right: 6px;
 }
-/*@import "components/search";
-@import "components/colums-info";
-@import "components/ad";*/
+.search {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: row nowrap;
+  -webkit-box-align: center;
+  align-items: center;
+  padding-left: 38px;
+  padding-bottom: 15px;
+  width: 81%;
+}
+.search__main-search {
+  width: 816px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: row nowrap;
+}
+.search__logo {
+  width: 130px;
+  height: 80px;
+  padding-right: 5px;
+}
+.search__input {
+  width: 730px;
+  height: 30px;
+}
+.search__tabs {
+  list-style-type: none;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  width: 650px;
+  height: 30px;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+  color: #0054b9;
+}
+.search__tabs-text {
+  vertical-align: middle;
+  padding-right: 4px;
+}
+.search__input {
+  border: 2px solid #fedb5a;
+}
+.search__button {
+  background-color: #fedb5a;
+  border: 2px solid #fedb5a;
+  width: 76px;
+  height: 36px;
+  font-size: 15px;
+  padding-left: 0px;
+  position: relative;
+}
+.search__bottom {
+  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  width: 650px;
+  height: 30px;
+}
+.search__bottom-text {
+  font-size: 15px;
+  width: 170px;
+  padding-top: 5px;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.colums-info {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: row nowrap;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 84%;
+  height: 200px;
+  padding-left: 50px;
+  margin-top: 20px;
+}
+.colums-info__colum {
+  width: 270px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-flow: column nowrap;
+}
+.colums-info__colum-widget {
+  height: 200px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-flow: column nowrap;
+  padding-left: 8px;
+  padding-top: 6px;
+}
+/*.link {
+  &-header {
+    color: black;
+    text-decoration: none;
+  }
+}*/
+.colum-widget__list {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-flow: column nowrap;
+  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+  color: black;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.colum-widget__text {
+  line-height: 18px;
+}
+.colum-widget__list-maps {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: row wrap;
+  margin-top: 6px;
+}
+.colum-widget__list-maps-item {
+  line-height: 25px;
+  padding-right: 8px;
+  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 15px;
+}
+.colum-widget__img {
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+}
+.colum-widget__link {
+  font-size: 16px;
+  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: bolder;
+  color: #0054b9;
+  padding: 3px;
+  padding-right: 6px;
+}
+.ad-img {
+  width: 720px;
+  height: 85px;
+  margin-left: 15%;
+  margin-top: 5px;
+}
 * {
   padding: 0;
   margin: 0;

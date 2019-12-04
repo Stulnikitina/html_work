@@ -1,14 +1,14 @@
 {
-  "name": "rawjs",
+  "name": "stulnikitina",
   "version": "1.0.0",
-  "description": "JS Sandbox",
+  "description": "Yandex start page",
   "main": "index.js",
   "scripts": {
     "svg": "gulp svg",
     "less": "gulp less",
     "clear": "gulp clear"
   },
-  "author": "Boris Goncharov",
+  "author": "Nikitina Olga",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.7",
