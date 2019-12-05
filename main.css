@@ -526,18 +526,23 @@ template {
 }
 .search__button {
   background-color: #fedb5a;
-  border: 8px solid transparent;
-  /*width: 76px;*/
-  font-size: 15px;
-  padding-left: 0px;
+  border: 1px solid transparent;
+  width: 76px;
   position: relative;
 }
-.search__button:after {
+.search__button::after {
   content: "";
   width: 0;
   height: 0;
-  border: 8px solid transparent;
-  border-left: 2px solid #fedb5a;
+  position: absolute;
+  left: 75px;
+  top: -1px;
+  border: 17px solid transparent;
+  border-left: 9px solid #fedb5a;
+}
+.search__button-text {
+  font-size: 16px;
+  padding-left: 0px;
 }
 .search__bottom {
   font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;

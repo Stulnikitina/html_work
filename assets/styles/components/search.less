@@ -51,19 +51,26 @@
 
   &__button {
     background-color: @yandex-color;
-    border: 8px solid transparent;
+    border: 1px solid transparent;
+    width: 76px;
+    position: relative;
 
-    &:after {
+    &::after {
       content: "";
       width: 0;
       height: 0;
-      border: 8px solid transparent;
-      border-left: 2px solid @yandex-color;
+      position: absolute;
+      left: 75px;
+      top: -1px;
+      border: 17px solid transparent;
+      border-left: 9px solid @yandex-color;
     }
-    /*width: 76px;*/
-    font-size: 15px;
-    padding-left: 0px;
-    position: relative;
+
+    &-text{
+      font-size: 16px;
+      padding-left: 0px;
+    }
+
   }
 
   &__bottom {
