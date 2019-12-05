@@ -1,5 +1,6 @@
 .header {
 
+  /*.font-regular();*/
   font: 81.25% Arial, Helvetica, sans-serif;
   width: 82%;
   height: 33px;
@@ -19,18 +20,34 @@
       height: 16px;
     }
 
+    &-icon:hover {
+      background-image: url(./assets/icons/geo2.svg);
+      vertical-align: middle;
+      width: 16px;
+      height: 16px;
+    }
+
     &-text {
       padding-right: 13px;
 
       &._grey {
         color: @silver;
       }
+
+      &._grey:hover {
+        color: @red;
+      }
     }
 
     &-link {
-      color: black;
+      color: @black;
       text-decoration: none;
     }
+
+    &-link:hover {
+      color: @red;
+    }
+
 
   }
 }

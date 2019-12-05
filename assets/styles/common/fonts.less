@@ -1,1 +1,10 @@
-// добавить миксины для шрифтов
+.font-face(@font-size,@font-family, @file-path) {
+  @font-face {
+    font-size: @font-size;
+    font-family: @font-family;
+    src: url('@{file-path}.woff') format('woff')
+  }
+}
+
+/*.font-face(16,Arial, @file-path)*/
+
