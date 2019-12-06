@@ -1,0 +1,50 @@
+.search-row {
+
+  position: relative;
+
+  &__input {
+    width: 730px;
+    height: 31px;
+    border: 2px solid @yandex-color;
+
+    &:invalid + div {
+      opacity: 0.3;
+    }
+
+    &:not(:invalid) + div {
+      opacity: 0;
+    }
+
+  }
+
+  &__icons {
+
+    width: 60px;
+    height: 24px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+
+    &-icon {
+      width: 27px;
+      height: 24px;
+      fill: @black;
+
+      &:hover{
+        opacity: 0.6;
+      }
+
+      &._center {
+        padding-top: 12px;
+      }
+    }
+
+
+  }
+
+
+}

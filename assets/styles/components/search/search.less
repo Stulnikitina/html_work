@@ -13,9 +13,44 @@
   }
 
   &__main-search {
+
     width: 816px;
     display: flex;
     flex-flow: row nowrap;
+
+    &-row{
+
+    }
+
+    &-button {
+      background-color: @yandex-color;
+      border: 1px solid transparent;
+      width: 76px;
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        left: 75px;
+        top: -1px;
+        border: 17px solid transparent;
+        border-left: 9px solid @yandex-color;
+
+      }
+
+      &-text{
+        font-size: 16px;
+        padding-left: 0px;
+      }
+
+      &:active{
+        background-color: @yandex-color * 0.95;
+      }
+
+    }
+
   }
 
   &__logo {
@@ -25,11 +60,6 @@
     position: relative;
     top: -11px;
     left: 5px;
-  }
-
-  &__input {
-    width: 730px;
-    height: 31px;
   }
 
   &__tabs {
@@ -48,39 +78,6 @@
     &-text {
       vertical-align: middle;
       padding-right: 2px;
-    }
-
-  }
-
-  &__input {
-    border: 2px solid @yandex-color;
-  }
-
-  &__button {
-    background-color: @yandex-color;
-    border: 1px solid transparent;
-    width: 76px;
-    position: relative;
-
-    &::after {
-      content: "";
-      width: 0;
-      height: 0;
-      position: absolute;
-      left: 75px;
-      top: -1px;
-      border: 17px solid transparent;
-      border-left: 9px solid @yandex-color;
-
-    }
-
-    &-text{
-      font-size: 16px;
-      padding-left: 0px;
-    }
-
-    &:active{
-      background-color: @yandex-color * 0.95;
     }
 
   }

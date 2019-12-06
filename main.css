@@ -511,6 +511,29 @@ template {
   -webkit-box-direction: normal;
   flex-flow: row nowrap;
 }
+.search__main-search-button {
+  background-color: #fedb5a;
+  border: 1px solid transparent;
+  width: 76px;
+  position: relative;
+}
+.search__main-search-button::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 75px;
+  top: -1px;
+  border: 17px solid transparent;
+  border-left: 9px solid #fedb5a;
+}
+.search__main-search-button-text {
+  font-size: 16px;
+  padding-left: 0px;
+}
+.search__main-search-button:active {
+  background-color: #f1d056;
+}
 .search__logo {
   width: 130px;
   height: 80px;
@@ -518,10 +541,6 @@ template {
   position: relative;
   top: -11px;
   left: 5px;
-}
-.search__input {
-  width: 730px;
-  height: 31px;
 }
 .search__tabs {
   list-style-type: none;
@@ -544,32 +563,6 @@ template {
   vertical-align: middle;
   padding-right: 2px;
 }
-.search__input {
-  border: 2px solid #fedb5a;
-}
-.search__button {
-  background-color: #fedb5a;
-  border: 1px solid transparent;
-  width: 76px;
-  position: relative;
-}
-.search__button::after {
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  left: 75px;
-  top: -1px;
-  border: 17px solid transparent;
-  border-left: 9px solid #fedb5a;
-}
-.search__button-text {
-  font-size: 16px;
-  padding-left: 0px;
-}
-.search__button:active {
-  background-color: #f1d056;
-}
 .search__bottom {
   font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
   display: -webkit-box;
@@ -590,6 +583,47 @@ template {
   padding-top: 5px;
   white-space: nowrap;
   vertical-align: middle;
+}
+.search-row {
+  position: relative;
+}
+.search-row__input {
+  width: 730px;
+  height: 31px;
+  border: 2px solid #fedb5a;
+}
+.search-row__input:invalid + div {
+  opacity: 0.3;
+}
+.search-row__input:not(:invalid) + div {
+  opacity: 0;
+}
+.search-row__icons {
+  width: 60px;
+  height: 24px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  position: absolute;
+  top: 5px;
+  right: 20px;
+}
+.search-row__icons-icon {
+  width: 27px;
+  height: 24px;
+  fill: black;
+}
+.search-row__icons-icon:hover {
+  opacity: 0.6;
+}
+.search-row__icons-icon._center {
+  padding-top: 12px;
 }
 .ad-img {
   width: 720px;
