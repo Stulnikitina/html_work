@@ -1,0 +1,106 @@
+.widget{
+
+    display: flex;
+    flex-flow: column nowrap;
+
+    &__header{
+
+        height: 20px;
+        display: flex;
+        flex-flow: row nowrap;
+        padding-top: 10px;
+
+        &-link{
+
+            text-decoration: none;
+
+            &-text{
+
+                font-size: 16px;
+                font-family: 'YS Text','Helvetica Neue',Arial,sans-serif;
+                font-weight: bolder;
+                color:@blue-link;
+
+                &:hover{
+                    color: @red;
+                }
+
+            }
+
+        }
+
+        &-dots{
+
+            width: 16px;
+            height: 16px;
+            opacity: 0;
+
+            &:hover{
+                opacity: 50%;
+            }
+
+        }
+
+    }
+
+    &__body{
+
+        display: flex;
+        flex-flow: row nowrap;
+        padding-top: 10px;
+
+        &-icon{
+
+            width: 33px;
+            height: 33px;
+            margin-left: 5px;
+
+        }
+
+        &-number{
+
+            width: 33px;
+            height: 33px;
+            margin-left: 10px;
+            font-size: 28px;
+            font-family: 'YS Text','Helvetica Neue',Arial,sans-serif;
+            text-align: center;
+
+        }
+
+        &-map-list {
+
+            display: flex;
+            flex-flow: row wrap;
+
+            &-item {
+
+                line-height: 25px;
+                font-size: 15px;
+                font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+
+            }
+
+        }
+
+        &-list{
+
+            display: flex;
+            flex-flow: column nowrap;
+
+            &-text {
+
+                font-size: 14px;
+                font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+                line-height: 15px;
+                margin-bottom: 8px;
+
+            }
+
+        }
+
+    }
+
+}
+
+

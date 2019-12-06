@@ -14,17 +14,32 @@
 
   &__group {
 
+    display: flex;
+    flex-flow: row nowrap;
+
+    &-geo {
+      margin-right: 2px;
+
+      &:hover {
+        fill: @red;
+        color: @red;
+      }
+
+    }
+
     &-icon {
       vertical-align: middle;
       width: 16px;
       height: 16px;
-    }
 
-    &-icon:hover {
-      background-image: url(./assets/icons/geo2.svg);
-      vertical-align: middle;
-      width: 16px;
-      height: 16px;
+      &:hover {
+        fill: @red;
+      }
+
+      &._icon-space {
+        margin-right: 3px;
+      }
+
     }
 
     &-text {
