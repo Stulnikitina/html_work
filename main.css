@@ -335,7 +335,6 @@ template {
 }
 .header__group-geo:hover {
   fill: red;
-  color: red;
 }
 .header__group-icon {
   vertical-align: middle;
