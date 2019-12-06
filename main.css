@@ -740,3 +740,86 @@ template {
   line-height: 15px;
   margin-bottom: 8px;
 }
+.desktop {
+  width: 16%;
+  height: 500px;
+  outline: 1px solid black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-flow: column nowrap;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  align-items: center;
+  padding-top: 5px;
+  padding-right: 7px;
+}
+.desktop__mail {
+  width: 87%;
+  height: 118px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-flow: column nowrap;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1), 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+}
+.desktop__mail-row {
+  height: 40px;
+  width: 180px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.desktop__mail-row-text {
+  font-size: 13px;
+  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+}
+.desktop__mail-row-text._grey {
+  color: silver;
+}
+.desktop__mail-row-text._link {
+  color: #0054b9;
+}
+.desktop__mail-row-text:hover {
+  color: red;
+}
+.desktop__mail-row-button {
+  width: 152px;
+  height: 30px;
+  background-color: #DEDEDE;
+  border-radius: 3px;
+  font-size: 13px;
+  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  border: 0;
+}
+.desktop__widget {
+  width: 87%;
+  height: 100px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1), 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+  transition: transform 0.15s ease-out 50ms, margin 0.1s 0.4s, visibility 0.1s 0.4s, -webkit-transform 0.15s ease-out 50ms;
+}
+.desktop__widget:hover {
+  -webkit-transition: 0.15s ease-out 0.25s;
+  transition: 0.15s ease-out 0.25s;
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+}
