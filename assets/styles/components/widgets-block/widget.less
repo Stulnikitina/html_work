@@ -3,6 +3,10 @@
     display: flex;
     flex-flow: column nowrap;
 
+    &:hover .three-dot{
+        fill:@icon;
+    }
+
     &__header{
 
         height: 20px;
@@ -10,35 +14,6 @@
         flex-flow: row nowrap;
         padding-top: 10px;
 
-        &-link{
-
-            text-decoration: none;
-
-            &-text{
-
-                .font-bolder;
-                font-weight: bolder;
-                color:@blue-link;
-
-                &:hover{
-                    color: @red;
-                }
-
-            }
-
-        }
-
-        &-dots{
-
-            width: 16px;
-            height: 16px;
-            opacity: 0;
-
-            &:hover{
-                opacity: 50%;
-            }
-
-        }
 
     }
 
@@ -73,7 +48,7 @@
 
             &-item {
 
-                .font-smallel;
+                .font-smaller;
                 line-height: 25px;
                 margin-right: 5px;
 
@@ -88,7 +63,7 @@
 
             &-text {
 
-                .font-smallel;
+                .font-smaller;
                 line-height: 15px;
                 margin-bottom: 8px;
 

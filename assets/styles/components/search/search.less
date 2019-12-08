@@ -28,6 +28,11 @@
       width: 76px;
       position: relative;
 
+      &:active,
+      &:focus {
+        outline: none;
+      }
+
       &::after {
         content: "";
         width: 0;
@@ -35,7 +40,7 @@
         position: absolute;
         left: 75px;
         top: -1px;
-        border: 17px solid transparent;
+        border: 18px solid transparent;
         border-left: 9px solid @yandex-color;
 
       }
@@ -63,6 +68,7 @@
   }
 
   &__tabs {
+
     list-style-type: none;
     display: flex;
     flex-flow: row nowrap;
@@ -71,14 +77,6 @@
     height: 30px;
     padding: 0;
     margin-top: 8px;
-    font-size: 16px;
-    font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
-    color: @blue-link;
-
-    &-text {
-      vertical-align: middle;
-      padding-right: 2px;
-    }
 
   }
 

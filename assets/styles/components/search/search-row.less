@@ -6,12 +6,13 @@
     width: 730px;
     height: 31px;
     border: 2px solid @yandex-color;
+    outline:none;
 
-    &:invalid + div {
+    &:invalid + .search-row__icons {
       opacity: 0.3;
     }
 
-    &:not(:invalid) + div {
+    &:not(:invalid) + .search-row__icons  {
       opacity: 0;
     }
 
@@ -32,10 +33,10 @@
     &-icon {
       width: 27px;
       height: 24px;
-      fill: @black;
+      fill: @icon;
 
       &:hover{
-        opacity: 0.6;
+        fill: @icon-dark !important;
       }
 
       &._center {
