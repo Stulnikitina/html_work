@@ -1,10 +1,38 @@
-.font-face(@font-size,@font-family, @file-path) {
+.font-face(@font-family, @file-path, @font-weight) {
   @font-face {
-    font-size: @font-size;
     font-family: @font-family;
-    src: url('@{file-path}.woff') format('woff')
+    src: url("@{file-path}.ttf") format("ttf");
+    font-weight: @font-weight;
   }
 }
 
-/*.font-face(16,Arial, @file-path)*/
+.font-face(Helvetica Neue, "/assets/fonts/HelveticaNeue", normal);
 
+.font(@font-family, @font-size, @font-weight) {
+  font-family: @font-family;
+  font-size: @font-size;
+  font-weight: @font-weight;
+}
+
+.font-regular {
+  .font(Helvetica Neue, 16px, normal);
+}
+
+.font-bolder {
+  .font(Helvetica Neue, 16px, bolder);
+}
+
+.font-regular-big {
+  .font-regular;
+  font-size: 28px;
+}
+
+.font-smallel {
+  .font-regular;
+  font-size: 15px;
+}
+
+.font-super-small {
+  .font-regular;
+  font-size: 13px;
+}

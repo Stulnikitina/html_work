@@ -304,12 +304,46 @@ template {
 [hidden] {
   display: none;
 }
-/*.font-face(16,Arial, @file-path)*/
+@font-face {
+  font-family: Helvetica Neue;
+  src: url("/assets/fonts/HelveticaNeue.ttf") format("ttf");
+  font-weight: normal;
+}
+.font-regular {
+  font-family: Helvetica Neue;
+  font-size: 16px;
+  font-weight: normal;
+}
+.font-bolder {
+  font-family: Helvetica Neue;
+  font-size: 16px;
+  font-weight: bolder;
+}
+.font-regular-big {
+  font-family: Helvetica Neue;
+  font-size: 16px;
+  font-weight: normal;
+  font-size: 28px;
+}
+.font-smallel {
+  font-family: Helvetica Neue;
+  font-size: 16px;
+  font-weight: normal;
+  font-size: 15px;
+}
+.font-super-small {
+  font-family: Helvetica Neue;
+  font-size: 16px;
+  font-weight: normal;
+  font-size: 13px;
+}
 .header {
-  /*.font-regular();*/
-  font: 81.25% Arial, Helvetica, sans-serif;
   width: 82%;
   height: 33px;
+  font-family: Helvetica Neue;
+  font-size: 16px;
+  font-weight: normal;
+  font-size: 13px;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: horizontal;
@@ -373,7 +407,10 @@ template {
   justify-content: center;
 }
 .news__container {
-  font: 81.25% Arial, Helvetica, sans-serif;
+  font-family: Helvetica Neue;
+  font-size: 16px;
+  font-weight: normal;
+  font-size: 13px;
   width: 84%;
   height: 190px;
   padding-left: 5px;
@@ -417,6 +454,11 @@ template {
   margin-bottom: 0;
 }
 .news__exchange-rates {
+  height: 15px;
+  font-family: Helvetica Neue;
+  font-size: 16px;
+  font-weight: normal;
+  font-size: 13px;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: horizontal;
@@ -426,9 +468,6 @@ template {
   justify-content: flex-start;
   padding-left: 63px;
   padding-top: -10px;
-  font-size: 13px;
-  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
-  height: 15px;
   vertical-align: middle;
   margin-bottom: 10px;
 }
@@ -446,8 +485,8 @@ template {
   color: silver;
 }
 .header-link__text {
+  font-family: Helvetica Neue;
   font-size: 16px;
-  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
   font-weight: bolder;
   color: #0054b9;
   padding-right: 6px;
@@ -481,11 +520,13 @@ template {
 }
 .ad-block__link-text {
   width: 30px;
+  font-family: Helvetica Neue;
   font-size: 16px;
-  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: normal;
   font-weight: bolder;
   color: #0054b9;
   padding-right: 6px;
+  overflow: auto;
 }
 .search {
   display: -webkit-box;
@@ -564,7 +605,9 @@ template {
   padding-right: 2px;
 }
 .search__bottom {
-  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+  font-family: Helvetica Neue;
+  font-size: 16px;
+  font-weight: normal;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: horizontal;
@@ -678,8 +721,8 @@ template {
   text-decoration: none;
 }
 .widget__header-link-text {
+  font-family: Helvetica Neue;
   font-size: 16px;
-  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
   font-weight: bolder;
   color: #0054b9;
 }
@@ -711,8 +754,10 @@ template {
   width: 33px;
   height: 33px;
   margin-left: 10px;
+  font-family: Helvetica Neue;
+  font-size: 16px;
+  font-weight: normal;
   font-size: 28px;
-  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
   text-align: center;
 }
 .widget__body-map-list {
@@ -723,9 +768,12 @@ template {
   flex-flow: row wrap;
 }
 .widget__body-map-list-item {
-  line-height: 25px;
+  font-family: Helvetica Neue;
+  font-size: 16px;
+  font-weight: normal;
   font-size: 15px;
-  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+  line-height: 25px;
+  margin-right: 5px;
 }
 .widget__body-list {
   display: -webkit-box;
@@ -735,15 +783,16 @@ template {
   flex-flow: column nowrap;
 }
 .widget__body-list-text {
-  font-size: 14px;
-  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+  font-family: Helvetica Neue;
+  font-size: 16px;
+  font-weight: normal;
+  font-size: 15px;
   line-height: 15px;
   margin-bottom: 8px;
 }
 .desktop {
   width: 16%;
   height: 500px;
-  outline: 1px solid black;
   position: absolute;
   top: 0;
   right: 0;
@@ -787,8 +836,10 @@ template {
   align-items: center;
 }
 .desktop__mail-row-text {
+  font-family: Helvetica Neue;
+  font-size: 16px;
+  font-weight: normal;
   font-size: 13px;
-  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
 }
 .desktop__mail-row-text._grey {
   color: silver;
@@ -802,10 +853,12 @@ template {
 .desktop__mail-row-button {
   width: 152px;
   height: 30px;
+  font-family: Helvetica Neue;
+  font-size: 16px;
+  font-weight: normal;
+  font-size: 13px;
   background-color: #DEDEDE;
   border-radius: 3px;
-  font-size: 13px;
-  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
   text-align: center;
   vertical-align: middle;
   border: 0;
