@@ -1,6 +1,6 @@
 .desktop {
 
-  width: 16%;
+  width: 203px;
   height: 500px;
   position: absolute;
   top: 0;
@@ -72,55 +72,51 @@
 
     width: 87%;
     height: 100px;
-    margin-bottom: 10px;
-    box-shadow: 0 0 2px 0 @shadow, 0 2px 6px 0 @shadow;
-    border-radius: 3px;
     position: relative;
 
-    &-under {
+    &-content {
+      display: flex;
+      margin-top: 10px;
       width: 180px;
       height: 100px;
-      position: absolute;
-      background-image: url("/assets/icons/3dots-horizontal.svg");
-      opacity: 0;
-      transition: opacity 0.15s 0s;
+      border-radius: 3px;
+      box-sizing: border-box;
+      box-shadow: 0 0 2px 0 rgba(0, 0, 0, .1),
+      0 2px 6px 0 rgba(0, 0, 0, .1);
+      transition: transform 0.2s ease-out;
 
-      &._clicked {
-        opacity: 0.3;
+      &._fixed {
+        transform: translate3d(-20px, 0, 0);
       }
     }
 
-    &._animated {
-      position: absolute;
-      width: 178px;
-      height: 100px;
-      right: 0px;
-      transition: transform 0.15s ease-out;
+    &:hover &-content {
+      transform: translate3d(-20px, 0, 0);
     }
 
-    &._fixed {
+    &-under {
       position: absolute;
-      height: 100px;
-      right: 0px;
-      transform: translateX(-20px);
+      top: 10px;
+      right: -10px;
+      width: 24px;
+      height: 24px;
+      opacity: 0;
+
+      &._clicked {
+        opacity: 0.4;
+      }
     }
 
     &:hover &-under {
-      opacity: 0.3;
-      transition: opacity 0.55s ease-out 1s;
+      opacity: 0.4;
+      transition: opacity 0.15s ease-out 0.35s;
 
       &:hover {
         opacity: 1;
-        transition: opacity 0s ease-out 1s;
+        transition: opacity 0s ease-out 0s;
+        cursor: pointer;
       }
     }
-
-    &:hover > &._animated {
-      transform: translateX(-20px);
-    }
-
-
-
   }
 
 
