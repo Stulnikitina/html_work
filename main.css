@@ -858,3 +858,9 @@ template {
 .three-dot:hover {
   fill: rgba(0, 0, 0, 0.9) !important;
 }
+.three-dot._hor {
+  fill: rgba(0, 0, 0, 0.5) !important;
+}
+.three-dot._hor:hover {
+  fill: rgba(0, 0, 0, 0.9) !important;
+}
