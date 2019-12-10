@@ -340,6 +340,7 @@ template {
 .link {
   color: black;
   text-decoration: none;
+  cursor: pointer;
 }
 .link:hover {
   color: red !important;
@@ -356,6 +357,9 @@ template {
   font-size: 16px;
   font-weight: normal;
   color: #0054b9;
+}
+.link._grey {
+  color: silver;
 }
 .header {
   width: 82%;
@@ -624,6 +628,7 @@ template {
   height: 31px;
   border: 2px solid #fedb5a;
   outline: none;
+  padding-left: 5px;
 }
 .search-row__input:invalid + .search-row__icons {
   opacity: 0.3;
@@ -653,7 +658,7 @@ template {
   fill: rgba(0, 0, 0, 0.5);
 }
 .search-row__icons-icon:hover {
-  fill: rgba(0, 0, 0, 0.9) !important;
+  fill: rgba(0, 0, 0, 0.9);
 }
 .search-row__icons-icon._center {
   padding-top: 12px;
