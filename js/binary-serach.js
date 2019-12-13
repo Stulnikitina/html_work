@@ -25,5 +25,5 @@ function binarySearch(value, list) {
 }
 
 let list = [1, 3, 6, 8, 16, 25, 45];
-let index = binarySearch(16, list);
+const index = binarySearch(16, list);
 console.log(index);
