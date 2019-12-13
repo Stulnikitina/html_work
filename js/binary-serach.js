@@ -1,3 +1,5 @@
+
+jsdoc
 function binarySearch(value, list) {
 
     let first = 0;                
@@ -10,17 +12,15 @@ function binarySearch(value, list) {
 
         middle = Math.floor((first + last) / 2);
 
-        if (list[middle] == value) {
-            found = true;
-            index = middle;
-            return index;
-        } else if (list[middle] > value){ 
+        if (list[middle] > value){ 
             last = middle - 1;
         } else {  
             first = middle + 1;
         }
 
     }
+
+    return list[middle] === value ? middle : null; 
 
 }
 
