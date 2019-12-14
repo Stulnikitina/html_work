@@ -539,18 +539,6 @@ template {
 .mail__agent-link-text {
   padding-left: 13px;
 }
-.main-col__search-container {
-  outline: 1px solid green;
-  width: 98%;
-  height: 78px;
-  margin-right: -5px;
-}
-.main-col__news {
-  outline: 1px solid green;
-  width: 98%;
-  height: 84%;
-  margin-right: -5px;
-}
 .set-up {
   font-family: Helvetica Neue;
   font-size: 15px;
@@ -671,18 +659,87 @@ template {
   align-items: center;
   border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
-/*@import "components/news/news-block";
-@import "components/news/news";
-@import "components/news/news-list";
-
-@import "components/search/search";
-@import "components/search/search-row";
-
-@import "components/ad";
-
-@import "components/widgets-block/widgets-block";
-@import "components/widgets-block/widget";
-
-@import "components/desktop";
-
-@import "components/three-dot";*/
+.main-col__search-container {
+  width: 98%;
+  height: 73px;
+  margin-right: -5px;
+  padding-top: 5px;
+  padding-left: 12px;
+  font-family: Helvetica Neue;
+  font-size: 15px;
+  font-weight: normal;
+}
+.main-col__search-container-tabs {
+  width: 378px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  padding-left: 2px;
+}
+.main-col__search-container-input-wrapper {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: row nowrap;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.main-col__news {
+  width: 98%;
+  height: 84%;
+  margin-right: -5px;
+}
+.input-wrapper__search-row {
+  position: relative;
+}
+.input-wrapper__search-row-input {
+  width: 820px;
+  height: 34px;
+  border: 2px solid #ff9e00;
+  border-radius: 3px 0 0 3px;
+  outline: none;
+}
+.input-wrapper__search-row-icon {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  fill: #A6A6A6;
+}
+.input-wrapper__search-row-text {
+  font-family: Helvetica Neue;
+  font-size: 15px;
+  font-weight: normal;
+  font-size: 13px;
+  width: 100px;
+  height: 16px;
+  position: absolute;
+  top: 14px;
+  left: 643px;
+  color: grey;
+}
+.input-wrapper__button {
+  width: 108px;
+  height: 40px;
+  background-color: #ff9e00;
+  border: 1px solid #ff9e00;
+  border-radius: 0 3px 3px 0;
+  outline: none;
+}
+.input-wrapper__button-text {
+  font-family: Helvetica Neue;
+  font-size: 15px;
+  font-weight: normal;
+  color: white;
+}
