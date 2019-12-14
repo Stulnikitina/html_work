@@ -551,10 +551,14 @@ template {
   height: 84%;
   margin-right: -5px;
 }
+.set-up {
+  font-family: Helvetica Neue;
+  font-size: 15px;
+  font-weight: normal;
+}
 .set-up__header {
   width: 228px;
   height: 33px;
-  outline: 1px solid black;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: horizontal;
@@ -567,11 +571,6 @@ template {
   padding-top: 4px;
   padding-left: 18px;
   padding-right: 20px;
-}
-.set-up__header-link {
-  font-family: Helvetica Neue;
-  font-size: 15px;
-  font-weight: normal;
 }
 .set-up__header-icons {
   display: -webkit-box;
@@ -592,9 +591,8 @@ template {
   cursor: pointer;
 }
 .set-up__body {
-  width: 266px;
-  height: 110px;
-  outline: 1px solid black;
+  width: 248px;
+  height: 109px;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -604,11 +602,62 @@ template {
   justify-content: flex-start;
   -webkit-box-align: start;
   align-items: flex-start;
+  padding-left: 18px;
+  padding-top: 1px;
 }
-.set-up__footer {
+.set-up__body-input-container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: row nowrap;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  height: 33%;
+  margin-bottom: 4px;
+}
+.set-up__body-input-container-name {
+  width: 113px;
+  height: 28px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding-left: 12px;
+  border-radius: 3px 0 0 3px;
+  outline: none;
+}
+.set-up__body-input-container-domain {
+  width: 100px;
+  height: 30px;
+  margin-top: 1px;
+  border: none;
+  background-color: white;
+  outline: 1px solid rgba(0, 0, 0, 0.12);
+}
+.set-up__body-button {
+  width: 160px;
+  height: 32px;
+  border: 1px solid #005bd1;
+  background-color: #005bd1;
+  color: white;
+  border-radius: 3px;
+  margin-bottom: 9px;
+}
+.set-up__body-password-setting {
+  width: 231px;
   font-family: Helvetica Neue;
   font-size: 15px;
   font-weight: normal;
+  font-size: 13px;
+  padding-top: 3px;
+}
+.set-up__body-password-setting-text {
+  margin-left: 5px;
+}
+.set-up__body-password-setting-forget {
+  margin-left: 40px;
+}
+.set-up__footer {
   width: 266px;
   height: 52px;
   display: -webkit-box;
@@ -620,7 +669,7 @@ template {
   justify-content: center;
   -webkit-box-align: center;
   align-items: center;
-  outline: 1px solid black;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
 /*@import "components/news/news-block";
 @import "components/news/news";

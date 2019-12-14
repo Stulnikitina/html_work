@@ -1,9 +1,10 @@
 .set-up {
 
+  .font-regular;
+
   &__header{
     width: 228px;
     height: 33px;
-    outline: 1px solid black;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -13,7 +14,7 @@
     padding-right: 20px;
 
     &-link{
-      .font-regular;
+
     }
 
     &-icons{
@@ -39,25 +40,80 @@
 
   &__body{
 
-    width: 266px;
-    height: 110px;
-    outline: 1px solid black;
+    width: 248px;
+    height: 109px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
+    padding-left: 18px;
+    padding-top: 1px;
+
+    &-input-container{
+
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      height: 33%;
+      margin-bottom: 4px;
+
+      &-name{
+        width: 113px;
+        height: 28px;
+        border: 1px solid @silver;
+        padding-left: 12px;
+        border-radius: 3px 0 0 3px;
+        outline:none;
+      }
+
+      &-domain{
+        width: 100px;
+        height: 30px;
+        margin-top: 1px;
+        border: none;
+        background-color: white;
+        outline: 1px solid @silver;
+      }
+
+    }
+
+    &-button{
+      width: 160px;
+      height: 32px;
+      border: 1px solid @blue-link;
+      background-color: @blue-link;
+      color: white;
+      border-radius: 3px;
+      margin-bottom: 9px;
+    }
+
+    &-password-setting{
+      width: 231px;
+      .font-smaller;
+      padding-top: 3px;
+
+      &-text{
+        margin-left: 5px;
+      }
+
+      &-forget{
+        margin-left: 40px;
+
+      }
+
+    }
 
   }
 
   &__footer{
-    .font-regular;
     width: 266px;
     height: 52px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    outline: 1px solid black;
+    border-top: 1px solid @silver;
   }
 
 }
