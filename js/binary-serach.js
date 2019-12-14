@@ -1,5 +1,3 @@
-
-jsdoc
 function binarySearch(value, list) {
 
     let first = 0;                

@@ -1,0 +1,29 @@
+.font-face(@font-family, @file-path, @font-weight) {
+  @font-face {
+    font-family: @font-family;
+    src: url("@{file-path}.ttf") format("ttf");
+    font-weight: @font-weight;
+  }
+}
+
+.font-face(Helvetica Neue, "/assets/fonts/HelveticaNeue", normal);
+
+.font(@font-family, @font-size, @font-weight) {
+  font-family: @font-family;
+  font-size: @font-size;
+  font-weight: @font-weight;
+}
+
+.font-regular {
+  .font(Helvetica Neue, 15px, normal);
+}
+
+.font-smaller {
+  .font-regular;
+  font-size: 13px;
+}
+
+.font-header {
+  .font-regular;
+  font-size: 12px;
+}

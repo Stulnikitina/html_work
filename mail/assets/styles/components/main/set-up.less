@@ -1,0 +1,64 @@
+.set-up {
+
+  &__header{
+    width: 228px;
+    height: 33px;
+    outline: 1px solid black;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4px;
+    padding-left: 18px;
+    padding-right: 20px;
+
+    &-link{
+      .font-regular;
+    }
+
+    &-icons{
+
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: flex-end;
+      fill: @blue-link;
+
+      &-item{
+        width: 16px;
+        height: 16px;
+        padding-left: 20px;
+
+        :hover{
+          cursor: pointer;
+        }
+      }
+
+    }
+
+  }
+
+  &__body{
+
+    width: 266px;
+    height: 110px;
+    outline: 1px solid black;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+  }
+
+  &__footer{
+    .font-regular;
+    width: 266px;
+    height: 52px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    outline: 1px solid black;
+  }
+
+}
+

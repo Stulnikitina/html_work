@@ -1,7 +1,7 @@
 {
   "name": "nikitinaolga",
   "version": "1.0.0",
-  "description": "Star page Mail",
+  "description": "Start page Mail",
   "main": "index.js",
   "scripts": {
     "svg": "gulp svg",

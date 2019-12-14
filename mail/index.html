@@ -1,27 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <title>Макет стартовой страницы  Mail.ru</title>
     <link rel="stylesheet" href="main.css">
-    <title>RawJS</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
 
-<svg class="app__header-icon"
-     width="20px"
-     height="20px"
-     viewBox="0 0 20 20">
-    <use href="#bell"></use>
-</svg>
+<header class="header">
 
-<!--<div class="menu">-->
+    <div class="header__group">
 
-<!--</div>-->
+        <a class="link _bolder" href="#"><span class="header__group-text">Mail.ru</span></a>
+        <a class="link" href="#"><span class="header__group-text">Почта</span></a>
+        <a class="link" href="#"><span class="header__group-text">Мой Мир</span></a>
+        <a class="link" href="#"><span class="header__group-text">Одноклассники</span></a>
+        <a class="link" href="#"><span class="header__group-text">Игры</span></a>
+        <a class="link" href="#"><span class="header__group-text">Знакомства</span></a>
+        <a class="link" href="#"><span class="header__group-text">Новости</span></a>
+        <a class="link" href="#"><span class="header__group-text">Поиск</span></a>
+
+    </div>
+
+    <div class="header__group">
+
+        <a class="link" href="#"><span class="header__group-text">Регистрация</span></a>
+        <a class="link" href="#"><span class="header__group-tex _right">Вход</span></a>
+
+    </div>
+
+</header>
+
+<main class="main-block">
+
+    <div class="main-block__container">
+
+        <div class="main-block__container-mail mail">
+            <img class="mail__logo" src="assets/images/mail-logo.jpg"/>
+            <div class="mail__set-up set-up">
+
+                <div class="set-up__header">
+
+                    <a class="set-up__header-link link _bolder">Почта</a>
+
+                    <div class="set-up__header-icons">
+
+                        <svg class="set-up__header-icons-item">
+                            <use href="#cloud"></use>
+                        </svg>
+
+                        <svg class="set-up__header-icons-item">
+                            <use href="#calendar"></use>
+                        </svg>
+
+                    </div>
+
+                </div>
+
+                <div class="set-up__body">
+
+                    <div class="set-up__body-input-container">
+                        <input class="set-up__body-input-container-name" type="text" value="nikitinaolga"/>
+                        <select class="set-up__body-input-container-domain">
+                            <option selected>@mail.ru</option>
+                            <option>@inbox.ru</option>
+                            <option>@list.ru</option>
+                            <option>@bk.ru</option>
+                        </select>
+                    </div>
+                    <button class="" type="button">Вoйти в почту</button>
+                    <div class="">
+
+                        <input class="" type="checkbox" checked >Запомнить</input>
+                        <a class="link _forget-password">Забыли пароль?</a>
+
+                    </div>
+
+                </div>
+
+                <div class="set-up__footer">
+
+                    <span class="desktop__mail-row-text link">Создать почту</span>
+
+                </div>
+
+            </div>
+            <div class="mail__widgets">
+
+                <a class="mail__widgets-link link">
+
+                    <img class="mail__widgets-link-img" src="assets/images/widget-img.png">
+                    <span class="mail__widgets-link-text">Облако</span>
+
+                </a>
+                <a class="mail__widgets-link link">
+
+                    <img class="mail__widgets-link-img" src="assets/images/widget-img.png">
+                    <span class="mail__widgets-link-text">Мой мир</span>
+
+                </a>
+                <a class="mail__widgets-link link">
+
+                    <img class="mail__widgets-link-img" src="assets/images/widget-img.png">
+                    <span class="mail__widgets-link-text">Одноклассники</span>
+
+                </a>
+                <a class="mail__widgets-link link">
+
+                    <img class="mail__widgets-link-img" src="assets/images/widget-img.png">
+                    <span class="mail__widgets-link-text">Юла</span>
+
+                </a>
+                <a class="mail__widgets-link link">
+
+                    <img class="mail__widgets-link-img" src="assets/images/widget-img.png">
+                    <span class="mail__widgets-link-text">Гороскоп: Рыбы</span>
+
+                </a>
+                <a class="mail__widgets-link link">
+
+                    <img class="mail__widgets-link-img" src="assets/images/widget-img.png">
+                    <span class="mail__widgets-link-text">ТВ-программа</span>
+
+                </a>
+                <a class="mail__widgets-link link">
+
+                    <img class="mail__widgets-link-img" src="assets/images/widget-img.png">
+                    <span class="mail__widgets-link-text">Подписка комбо</span>
+
+                </a>
+
+            </div>
+            <div class="mail__agent">
+
+                <a class="mail__agent-link link _black _no-under">
+
+                    <img class="mail__agent-link-img" src="assets/images/agent.png">
+                    <span class="mail__agent-link-text">Установить агент</span>
+
+                </a>
+
+            </div>
+        </div>
+
+        <div class="main-block__container-main-col main-col">
+
+            <div class="main-col__search-container">
+
+                <div class="main-col__search-container-tabs">
+
+                </div>
+
+                <div class="main-col__search-container-input-wrapper input-wrapper">
+
+                    <div class="input-wrapper__row">
+
+                        <input class="input-wrapper__row-input" type="text" required>
+
+                        <div class="input-wrapper__row-icons">
+
+                        </div>
+
+                    </div>
+
+                    <div class="input-wrapper__button">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="main-col__news">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
 </body>
 
 <div style="opacity: 0; visibility: hidden">
     <!-- inject:svg -->
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="bell" viewBox="0 0 16 18"><path d="M12.65 7.365C10.37 2.458 9.184.594 5.459.672 4.132.699 4.45-.29 3.438.085c-1.01.375-.143.924-1.177 1.773C-.641 4.241-.374 6.445.972 11.698c.567 2.213-1.367 2.321-.602 4.465.559 1.564 4.679 2.219 9.025.607 4.347-1.613 7.086-4.814 6.527-6.378-.765-2.145-2.311-.961-3.272-3.027zm-3.726 8.083c-3.882 1.44-7.072.594-7.207.217-.232-.65 1.253-2.816 5.691-4.463 4.438-1.647 6.915-1.036 7.174-.311.153.429-1.775 3.116-5.658 4.557zm-1.248-3.494c-2.029.753-3.439 1.614-4.353 2.389.643.584 1.847.726 3.046.281 1.527-.565 2.466-1.866 2.095-2.904l-.016-.036c-.251.082-.508.171-.772.27z"/></symbol><symbol id="eye" viewBox="0 0 24 18"><path d="M12 0C2.969 0 0 8.188 0 8.188s2.969 8.189 12 8.189c9.03 0 12-8.189 12-8.189S21.03 0 12 0zm0 14.04c-3.38 0-6.118-2.62-6.118-5.852 0-3.231 2.739-5.853 6.118-5.853 3.38 0 6.117 2.622 6.117 5.853 0 3.232-2.738 5.852-6.117 5.852zm0-5.852c-.56-.607.913-2.926 0-2.926-1.69 0-3.06 1.311-3.06 2.926 0 1.616 1.37 2.927 3.06 2.927 1.689 0 3.06-1.311 3.06-2.927 0-.743-2.584.515-3.06 0z"/></symbol><symbol id="menu" viewBox="0 0 20 20"><path d="M16.4 9H3.6c-.552 0-.6.447-.6 1 0 .553.048 1 .6 1h12.8c.552 0 .6-.447.6-1 0-.553-.048-1-.6-1zm0 4H3.6c-.552 0-.6.447-.6 1 0 .553.048 1 .6 1h12.8c.552 0 .6-.447.6-1 0-.553-.048-1-.6-1zM3.6 7h12.8c.552 0 .6-.447.6-1 0-.553-.048-1-.6-1H3.6c-.552 0-.6.447-.6 1 0 .553.048 1 .6 1z"/></symbol></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="calendar" viewBox="0 0 14 15"><path d="M12 15H2a2 2 0 01-2-2V3a2 2 0 011.999-2 1 1 0 012 0h6a1 1 0 012 0H12a2 2 0 012 2v10a2 2 0 01-2 2zM2.999 3a1 1 0 110 2 1 1 0 010-2zm8 0a1 1 0 110 2 1 1 0 010-2z"/></symbol><symbol id="cloud" viewBox="0 0 16 12"><path d="M12.285 11.796c-.76 0-1.53-.668-2.118-1.086-.509.754-1.504 1.29-2.44 1.29-.983 0-2.118-.39-2.677-1.374a2.162 2.162 0 01-1.907 1.17C1.407 11.796 0 10.294 0 8.44c0-1.36.892-2.318 1.983-2.844-.08-.254-.256-.737-.256-1.02 0-1.403 1.066-2.542 2.381-2.542.366 0 .843.233 1.153.39C5.854 1.077 7.003 0 8.489 0c2.022 0 3.923 1.476 3.317 4.328.028 0 .45-.464.48-.464 2.05 0 3.714 1.775 3.714 3.964-.001 2.192-1.664 3.968-3.715 3.968z"/></symbol></svg>
     <!-- endinject -->
 </div>
 

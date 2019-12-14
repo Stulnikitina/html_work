@@ -8,7 +8,10 @@ const inject                        = require('gulp-inject'); // npm install gul
 const path                          = require('path'); // installed with npm install gulp -g
 const autoprefixer                  = require('gulp-autoprefixer'); // npm install --save-dev gulp-autoprefixer
 
-gulp.task('svgstore', function () {
+
+
+
+gulp.task('svgstore',  function () {
     const svgs = gulp
         .src('./assets/icons/**/*.svg')
         .pipe(svgmin(function (file) {
@@ -20,7 +23,7 @@ gulp.task('svgstore', function () {
                     },
                     {
                         removeAttrs: {
-                            attrs: "(fill|stroke)"
+                            attrs: "stroke"
                         }
                     },
                     {
@@ -67,5 +70,7 @@ gulp.task('serve', function () {
     gulp.watch("./main.css").on("change", browserSync.reload);
     gulp.watch("./index.html").on("change", browserSync.reload);
 });
+
+
 
 gulp.task('default', series(parallel('less', 'svgstore'), 'serve'));
