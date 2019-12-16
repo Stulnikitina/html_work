@@ -1,8 +1,14 @@
+/**
+ * Создает экземпляр binarySearch.
+ *
+ * @author: Nikitina Olga
+ * @param {value} - значение, которое мы ищем в отсортированном массиве list 
+ *        {list} - отсортированный массив, где мы хотим, найти значение value
+ */
 function binarySearch(value, list) {
 
     let first = 0;                
     let last = list.length - 1;  
-    let index = -1;
     let middle;
 
 
@@ -22,6 +28,5 @@ function binarySearch(value, list) {
 
 }
 
-let list = [1, 3, 6, 8, 16, 25, 45];
-const index = binarySearch(16, list);
-console.log(index);
+const list = [1, 3, 6, 8, 16, 25, 45];
+console.log(binarySearch(16, list));
