@@ -2,8 +2,9 @@
  * Создает экземпляр binarySearch.
  *
  * @author: Nikitina Olga
- * @param {value} - значение, которое мы ищем в отсортированном массиве list 
- *        {list} - отсортированный массив, где мы хотим, найти значение value
+ * @param: {number} value - значение, которое мы ищем в отсортированном массиве list 
+ * @param: {array} list - отсортированный массив, где мы хотим, найти значение value
+ * @return: {int} индекс значения value в массиве list, если он там есть и null в противном случае
  */
 function binarySearch(value, list) {
 
