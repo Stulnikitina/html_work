@@ -1,0 +1,41 @@
+.inform{
+
+  .font-smaller;
+  margin-top: 10px;
+  padding-left: 5px;
+
+
+  &__item{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 10px;
+
+    &-icon{
+      width: 36px;
+      height: 36px;
+      margin-right: 15px;
+      fill: @black;
+
+    }
+
+    &-text{
+      height: 36px;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      &-span{
+        color:@red;
+        cursor: pointer;
+      }
+    }
+  }
+
+  & &__item:first-child{
+    margin-right: 30px;
+  }
+}
+
