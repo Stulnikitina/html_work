@@ -441,6 +441,10 @@ template {
   width: 266px;
   height: 68px;
   margin-left: -5px;
+  border: none;
+  -webkit-transition: all 0.1s ease-in-out 0ms;
+  transition: all 0.1s ease-in-out 0ms;
+  z-index: -1;
 }
 .mail__set-up {
   border: 1px solid rgba(0, 0, 0, 0.12);
@@ -535,6 +539,14 @@ template {
 }
 .mail__agent-link-text {
   padding-left: 13px;
+}
+._animated {
+  -webkit-transition: all 0.1s ease-in-out 0ms;
+  transition: all 0.1s ease-in-out 0ms;
+}
+._animated:hover {
+  box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.1);
+  border-color: transparent;
 }
 .set-up {
   font-family: Helvetica Neue;
@@ -717,11 +729,12 @@ template {
   position: relative;
 }
 .input-wrapper__search-row-input {
-  width: 820px;
+  width: 780px;
   height: 34px;
   border: 2px solid #ff9e00;
   border-radius: 3px 0 0 3px;
   outline: none;
+  padding-left: 40px;
 }
 .input-wrapper__search-row-icon {
   width: 16px;

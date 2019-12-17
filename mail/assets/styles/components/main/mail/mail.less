@@ -5,6 +5,10 @@
     width: 266px;
     height: 68px;
     margin-left: -5px;
+    border: none;
+    transition: all .1s ease-in-out 0ms;
+    z-index: -1;
+
   }
 
   &__set-up{
@@ -85,6 +89,15 @@
 
     }
 
+  }
+}
+
+._animated{
+  transition: all .1s ease-in-out 0ms;
+
+  &:hover{
+    box-shadow: 0 0 5px 4px rgba(0,0,0,0.10);
+    border-color: transparent;
   }
 }
 
