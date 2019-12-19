@@ -1,3 +1,4 @@
+//https://learn.javascript.ru/task/calculator
 "use strict";
 
 let calculator = {

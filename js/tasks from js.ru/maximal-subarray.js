@@ -1,3 +1,4 @@
+//https://learn.javascript.ru/task/maximal-subarray
 "use strict";
 
 function getMaxSubSum(arr) {

@@ -1,3 +1,4 @@
+//https://learn.javascript.ru/task/sum-object
 "use strict";
 
 let salaries = {

@@ -1,3 +1,4 @@
+//https://learn.javascript.ru/task/copy-sort-array
 "use strict";
 
 function copySorted(arr) {

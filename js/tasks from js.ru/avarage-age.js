@@ -1,3 +1,4 @@
+//https://learn.javascript.ru/task/average-age
 "use strict";
 
 function getAverageAge(arr){

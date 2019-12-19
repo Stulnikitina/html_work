@@ -1,3 +1,4 @@
+//https://learn.javascript.ru/task/is-empty
 "use strict";
 
 function isEmpty(obj) {

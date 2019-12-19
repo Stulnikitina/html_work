@@ -1,3 +1,4 @@
+//https://learn.javascript.ru/task/sort-objects
 "use strict";
 
 let vasya = { name: "Вася", age: 25 };

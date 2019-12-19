@@ -1,3 +1,4 @@
+//https://learn.javascript.ru/task/chain-calls
 "use strict";
 
 let ladder = {
