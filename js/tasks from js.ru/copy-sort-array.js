@@ -1,10 +1,9 @@
 //https://learn.javascript.ru/task/copy-sort-array
 "use strict";
 
-function copySorted(arr) {
-    let sortedArr = arr.slice();
-    sortedArr.sort();
-    return sortedArr;
+let copySorted = (arr) => {
+    return arr.slice()
+              .sort();
 }
 
 let arr = ["HTML", "JavaScript", "CSS"];
