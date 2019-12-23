@@ -16,7 +16,7 @@ let ladder = {
     }
 };
 
-console.log(ladder.up().up().down().showStep());
+console.log(ladder.up().up().up().down().showStep());
 
 
 
