@@ -1,13 +1,11 @@
 //https://learn.javascript.ru/task/maximal-subarray
 "use strict";
 
-let getMaxSubSum = (arr) => {
+let getMaxSubSum = arr => {
 
     let sum = 0;
 
-    let getMaxOfArray = (arr) => {
-        return Math.max.apply(null, arr);
-    }
+    let getMaxOfArray = arr => Math.max.apply(null, arr);
 
     if (getMaxOfArray(arr) < 0) {
         console.log(0);
