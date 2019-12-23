@@ -1,10 +1,9 @@
 //https://learn.javascript.ru/task/is-empty
 "use strict";
+let isEmpty = obj => !Object.keys(obj).length;
 
 let obj1 = {
 };
-
-let isEmpty = (obj) => !Object.keys(obj).length;
 
 console.log(isEmpty(obj1));
 
