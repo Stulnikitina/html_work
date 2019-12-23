@@ -7,7 +7,7 @@ let salaries = {
     Pete: 130,
 };
 
-function sum(obj) {
+let sum = (obj) => {
     let s = 0;
     for (let key in obj) {
         s += obj[key];
