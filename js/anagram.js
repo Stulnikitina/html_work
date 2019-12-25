@@ -11,7 +11,7 @@
  * @return: {array} 
  */
 
-let anagram = arr => {
+const anagram = arr => {
     let dict = {};
 
     arr.map( word => {
