@@ -5,19 +5,22 @@
  * @description Функция tree, рисует ASCII-ёлочку высотой N символов из звёздочек.
  *
  * @param: {number} height Высота ёлочки
- * @return: {}
+ * @return: {string}
  */
 
 const tree = height => {
-
     if (height <= 2 ) {return null;}
 
-    let tree = '';
-    for(let index = 0; index < height; index++) {
-        tree = tree + ' '.repeat(Math.floor(height - index - 1)) + '*'.repeat(2 * index + 1) + ' '.repeat(Math.floor(height - index - 1)) + '\n';
-    };
+    let tree = [];
+    for(let index = 0; index < height; index++) {tree.push(index);}
 
-    return tree = tree + ' '.repeat(height - 1) + '|' + ' '.repeat(height - 1) + '\n';
+    tree = tree.map(line =>
+        ' '.repeat(Math.floor(height - line - 1)) + '*'.repeat(2 * line + 1) + ' '.repeat(Math.floor(height - line - 1)) + '\n'
+    )
+
+    tree.push(' '.repeat(height - 1) + '|' + ' '.repeat(height - 1) + '\n');
+
+    return tree;
 }
 
 
