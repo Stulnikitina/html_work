@@ -1,40 +1,29 @@
 "use strict";
 
 /**
- * Создаем экземпляр sort.
- * Функция sort, которая будет сортировать буквы в словах по алфавиту,
+ * @author: Nikitina Olga
+ * @description Функция sort, которая будет сортировать буквы в словах по алфавиту,
  * а потом получившиеся слова в предложении — тоже.
  * Первую букву каждого слова она сделает прописной, остальные — строчными.
  *
- * @author: Nikitina Olga
- * @param: {sentence} - сортируемое предложение
- * @return: отсортированный {arrWords}
+ * @param: {string} sentence Cортируемое предложение
+ * @return: {string}
  */
 
-let sort = sentence => {
-    let arrWords = sentence.split(" ");
+let sort = sentence =>{
+    return sentence.split(" ")
+         .map((word) => {
+             word = word.toLowerCase()
+            .split("")
+            .sort((a, b) => a.localeCompare(b))
+            .join("");
+            return `${word[0].toUpperCase()}${word.slice(1)}`;
+         })
+        .sort((a, b) => a.localeCompare(b))
+        .join(" ");
+};
 
-    arrWords = arrWords.map(function(word) {        
-        word.toLowerCase();
-        word = word.split("");
-        word.sort();
-        word = word.join("");
-        if(word.includes("жё")){
-            while (true) {
-                let foundPos = word.indexOf("жё", 0);
-                word = word.replace("жё","ёж");
-                if (foundPos == -1) break;
 
-            }
-        }
-        return `${word[0].toUpperCase()}${word.slice(1)}`;
-    });
-
-    arrWords.sort();
-    arrWords = arrWords.join(" ");
-
-    return arrWords;
-}
 
 
 
