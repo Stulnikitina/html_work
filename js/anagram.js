@@ -15,7 +15,7 @@ let anagram = arr => {
     let dict = {};
 
     arr.map( word => {
-        let sorted = word
+        const sorted = word
             .toLowerCase()
             .split("")
             .sort((a, b) => a.localeCompare(b))
@@ -29,7 +29,9 @@ let anagram = arr => {
     return Object
         .values(dict)
         .filter(set => set.size >= 2)
-        .map(set => Array.from(set));
+        .map(set => Array
+                    .from(set)
+                    .sort((a, b) => a.localeCompare(b)));
 };
 
 let arr = [
