@@ -31,7 +31,8 @@ let anagram = arr => {
         .filter(set => set.size >= 2)
         .map(set => Array
                     .from(set)
-                    .sort((a, b) => a.localeCompare(b)));
+                    .sort((a, b) => a.localeCompare(b)))
+        .sort((a, b) => a[0].localeCompare(b[0]));
 };
 
 let arr = [
