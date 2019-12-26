@@ -12,6 +12,11 @@
  */
 
 const anagram = arr => {
+
+    if ( arr.length === 1  || arr.length === 0 || !Array.isArray(arr) ){
+        return null;
+    }
+
     let dict = {};
 
     arr.map( word => {
@@ -41,6 +46,8 @@ let arr = [
     'барокко', 'пост', 'липа'
 ];
 
-console.log(anagram(arr));
+let arr1 = []
+
+console.log(anagram(arr1));
 
 
