@@ -108,11 +108,6 @@ function drawGame() {
 
   snake.unshift(newHead);
 
-  if (score === 1) {
-    clearInterval(game);
-    let isAgain = confirm("УРА МАША ТЫ ВЫИГРАЛА. Еще раз?");
-    isAgain ? location.reload() : alert(`Жаль. Твой счет: ${score}`);
-  }
 }
 
 let game = setInterval(drawGame, 90);
