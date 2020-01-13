@@ -10,7 +10,7 @@
  * @return: {string}
  */
 
-let sort = sentence =>{
+let sort = sentence => {
     return sentence.split(" ")
          .map((word) => {
              word = word.toLowerCase()
