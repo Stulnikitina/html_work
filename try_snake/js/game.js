@@ -7,7 +7,7 @@ const size_y = Math.floor(canvas.height / box);
 let score = 0;
 
 const foodImg = new Image();
-foodImg.src = "img/beer.png";
+foodImg.src = "img/food2.png";
 
 const headImg = new Image();
 headImg.src = "img/snake.png";
