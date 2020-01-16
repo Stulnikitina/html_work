@@ -1,0 +1,31 @@
+.font-face(@font-family, @file-path, @font-weight) {
+  @font-face {
+    font-family: @font-family;
+    src: url("@{file-path}.ttf") format("ttf");
+    font-weight: @font-weight;
+  }
+}
+
+.font-face(Rubik, "/assets/fonts/Rubik", normal);
+
+.font(@font-family, @font-size, @font-weight) {
+  font-family: @font-family, Sans-Serif;
+  font-size: @font-size;
+  font-weight: @font-weight;
+}
+
+.font-regular {
+  .font(Rubik, 15px, normal);
+}
+
+.font-smaller {
+  font-size: 13px;
+}
+
+.font-header {
+  font-size: 12px;
+}
+
+.font-bigger {
+  font-size: 18px;
+}

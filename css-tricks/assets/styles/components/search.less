@@ -1,0 +1,40 @@
+.search {
+  width: 29%;
+  height: 60px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+  &__input{
+    .font-bigger;
+    width: 210px;
+    height: 50px;
+    margin-left: 22px;
+    padding-left: 30px;
+    background-color: @blackLiter;
+    border-top-left-radius: 28px;
+    border-bottom-left-radius: 28px;
+    border: 2px solid @white;
+    border-right: 0px;
+  }
+
+  &__button{
+    width: 72px;
+    height: 56px;
+    background-image: @gradient;
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
+    border: 2px solid @white;
+    border-left: 0px;
+
+    &-lupa{
+      width: 26px;
+      height: 26px;
+      fill: @white;
+
+    }
+
+  }
+
+}
