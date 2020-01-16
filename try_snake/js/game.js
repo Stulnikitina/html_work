@@ -1,9 +1,11 @@
+import {box, size_x, size_y} from './consts.js';
+
 const canvas = document.getElementById("game");
 const ctx = canvas.getContext("2d");
 
-const box = 32;
-const size_x = Math.floor(canvas.width / box);
-const size_y = Math.floor(canvas.height / box);
+//const box = 32;
+//const size_x = Math.floor(640 / box);
+//const size_y = Math.floor(640 / box);
 let score = 0;
 
 const foodImg = new Image();
