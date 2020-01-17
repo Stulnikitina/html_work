@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+            justify-content: center;
+
+            font-family: system-ui, Arial, sans-serif;
+        }
+
+        .loader {
+            border: 9px solid darkgrey;
+            border-radius: 50%;
+            border-top: 9px solid blue;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .magic {
+            margin-bottom: 20px;
+            width: 200px;
+            height: 50px;
+        }
+
+        ._hidden {
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border: 0;
+            width: 0;
+            height: 0;
+            clip: rect(0 0 0 0);
+        }
+
+        .image{
+            width: 100px;
+            height: 100px;
+            margin-bottom: 15px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<button class="magic _hidden" id="button">Магическая кнопка</button>
+<div class="loader"></div>
+
+<script>
+    const API = 'https://api.github.com/users/stulnikitina';
+
+    fetch(API).then(resp => resp.json())
+        .then(user => {
+
+            //кнопка
+
+            let buttonHiden = document.querySelector(".magic");
+            buttonHiden.classList.remove("_hidden");
+            console.dir(buttonHiden);
+            buttonHiden.numPush = 0;
+
+            function handler() {
+                buttonHiden.numPush++;
+                if (buttonHiden.numPush < 5) buttonHiden.innerText = ` Магическая кнопка Нажали: ${buttonHiden.numPush} раз`;
+                if (buttonHiden.numPush === 5) buttonHiden.innerText = `WOOOW`;
+            }
+
+            buttonHiden.addEventListener("click", handler);
+            if (buttonHiden.numPush > 5) buttonHiden.removeEventListener("click", handler);
+
+
+            //фото
+            let userFoto = document.createElement('img');
+            document.body.append(userFoto);
+            userFoto.src = user.avatar_url;
+            userFoto.classList.add("image");
+
+            //name
+            let userName = document.createElement('span');
+            document.body.append(userName);
+            userName.textContent = user.login;
+
+            //delete loading
+        });
+
+
+
+
+</script>
+</body>
+</html>
